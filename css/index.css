@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+
+.header {
+    width: 100%;
+    padding: 40px 0;
+    /* background-color: #eee; */
+    font-size: 0;
+    text-align: center;
+}
+
+.header .logo {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.header .logo .block{
+    width: 100px;
+    display: inline-block;
+}
+
+.header .logo .block img {
+    width: 100%;
+    opacity: .8;
+}
+
+.header .logo p {
+    font-size: 30px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:  rgb(63, 63, 63);
+    text-shadow: 0 2px 3px rgba(0,0,0,.2);
+}
+
+@media(max-width: 450px) {
+    .header .logo .block{
+        width: 80px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.seperator{
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(200, 200, 200);
+}
+
+.tagLine {
+    width: 100%;
+    padding: 80px 60px;
+}
+
+.tagLine p {
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+}
+
+.tagLine p span {
+    color: rgb(63, 63, 63);
+    font-weight: 500;
+}
+
+@media(max-width: 450px) {
+    .tagLine {
+        padding: 50px 20px;
+    }
+    .tagLine p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.books {
+    width: 100%;
+    padding: 0 50px;
+    font-size: 0;
+    text-align: center;
+}
+
+.books .book {
+    display: inline-block;
+    width: 280px;
+    height: 500px;
+    margin: 15px;
+}
+
+.books .book .cover {
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to bottom,#eee,rgb(250, 250, 250),#eee);
+    position: relative;
+}
+
+.books .book .cover:hover {
+    cursor: pointer;
+}
+
+.books .book .cover .block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    box-shadow: 0 4px 25px rgba(0,0,0,.3);
+}
+
+.books .book .cover .block .front {
+    width: 100%;
+}
+
+.books .book .cover .block .back {
+    width: 100%;
+    display: none;
+}
+
+.books .book .cover:hover .block .front {
+    display: none;
+}
+
+.books .book .cover:hover .block .back {
+    display: block;
+}
+
+.books .book .content {
+    width: 100%;
+    height: 25%;
+    padding: 10px 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.books .book .content p {
+    color: #000;
+    font-size: 15.5px;
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+@media(max-width: 450px) {
+    .books {
+        padding: 0;
+    }
+    .books .book {
+        width: 160px;
+        height: 330px;
+        margin: 5px;
+    }
+    .books .book .cover {
+        height: 70%;
+    }
+    .books .book .cover .block {
+        width: 75%;
+        box-shadow: 0 3px 12px rgba(0,0,0,.2);
+    }
+    .books .book .content {
+        padding: 10px 0px;
+        height: 30%;
+    }
+    .books .book .content p {
+        font-size: 13px;
+        margin-top: 8px;
+        line-height: 20px;
+    }
+}
