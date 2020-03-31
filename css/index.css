@@ -130,6 +130,7 @@
     bottom: 0;
     padding: 10px 15px;
     display: flex;
+    height: 40px;
 }
 
 .books .book .cover .likes p {
@@ -177,6 +178,7 @@
     }
     .books .book .cover .likes {
         padding: 5px 10px;
+        height: 25px;
     }
     .books .book .cover .likes p {
         font-size: 13px;
