@@ -48,6 +48,12 @@ $(document).ready(function(){
                         <div class="text">Download Now</div>
                     </div>                   
                 `);
+
+                $('.details .right .download').click(function(){
+                    // https://github.com/Shivamdot/Download_Book/raw/master/Book.pdf
+                    window.open('https://github.com/Shivamdot/Download_Book/raw/master/Book.pdf');
+                });
+
             });
         });
     });
