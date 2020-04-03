@@ -208,7 +208,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #fff;
-    opacity: .8;
+    opacity: .9;
     display: none;
 }
 
@@ -225,7 +225,7 @@
     height: 80vh;
     max-width: 800px;
     background-color: #fff;
-    box-shadow: 0 4px 35px rgba(0,0,0,.2);
+    box-shadow: 0 4px 100px rgba(0,0,0,.2);
     font-size: 0;
     display: none;
 }
@@ -281,7 +281,13 @@
     height: 100%;
     width: 70%;
     overflow: hidden;
-    padding-top: 80px;
+    padding: 80px 0 50px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.details .right::-webkit-scrollbar {
+    display: none;
 }
 
 .details .right .title {
@@ -306,7 +312,7 @@
 
 .details .right .description {
     padding: 20px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .details .right .download {
