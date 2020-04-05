@@ -278,6 +278,59 @@
     text-shadow: none;
 }
 
+@media(max-width: 450px) {
+    .navbar {
+        height: 60px;
+        padding: 10px;
+    }
+    .navbar .logo {
+        width: 40px;
+        margin: 0;
+    }
+    .navbar .logo .icon {
+        width: 100%;
+    }
+    .navbar .logo .text {
+        display: none;
+    }
+    .navbar .search {
+        width: calc(100vw - 120px);
+        margin: 0 10px;
+    }
+    .navbar .search .search-bar {
+        width: 80%;
+        padding: 12px;
+        padding-right: 0;
+    }
+    .navbar .search .search-bar .search-book {
+        font-size: 15px;
+    }
+    .navbar .search .icon {
+        width: 20%;
+    }
+    .navbar .search .icon p {
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .navbar .github {
+        width: 40px;
+        margin: 0;
+    }
+    .navbar .github p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .navbar .signup {
+        display: none;
+    }
+    .navbar .login {
+        display: none;
+    }
+    .navbar .category {
+        display: none;
+    }
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 
 .header {
