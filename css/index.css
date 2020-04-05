@@ -105,6 +105,9 @@
 }
 
 @media(max-width: 450px) {
+    .header {
+        max-height: 500px;
+    }
     .header .banner {
         width: 90%;
         padding: 0px;
