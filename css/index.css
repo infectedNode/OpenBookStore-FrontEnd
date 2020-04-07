@@ -476,6 +476,10 @@
     color: rgb(63,63,63);
 }
 
+.recommendation .topics .topic p .down {
+    display: none;
+}
+
 .recommendation .topics .topic.active p,
 .recommendation .topics .topic:hover p {
     color: #007791;
@@ -570,6 +574,61 @@
     width: max-content;
     padding: 10px;
 }
+
+@media(max-width: 450px) {
+    .recommendation .topics {
+        height: auto;
+        box-shadow: none;
+        padding: 40px 15px;
+    }
+    .recommendation .topics .topic {
+        display: block;
+        height: 50px;
+        padding: 0px;
+        border-top: .5px solid rgba(0,0,0,.2);
+        text-align: left;
+    }
+    .recommendation .topics .topic.active {
+        border-bottom: none;
+        height: auto;
+    }
+    .recommendation .topics .topic p {
+        line-height: 50px;
+        font-size: 18px;
+        color: rgb(63,63,63);
+        font-weight: 600;
+    }
+    .recommendation .topics .topic p .down {
+        float: right;
+        font-size: 15px;
+        display: inline;
+    }
+    .recommendation .topics .topic.active p,
+    .recommendation .topics .topic:hover p {
+        color: rgb(63,63,63);
+    }
+    .recommendation .topics .topic .result {
+        position: initial;
+        top: 0px;
+        left: 0;
+        height: 365px;
+        padding: 0px;
+    }
+    .recommendation .topics .topic .result.active {
+        display: block;
+    }
+    .recommendation .space {
+        display: none;
+    }
+    .recommendation .topics .topic .result .left,
+    .recommendation .topics .topic .result .right {
+        display: none;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
 
 .recommendation .topics .topic .result .window .book {
     display: inline-block;
