@@ -611,7 +611,7 @@
         position: initial;
         top: 0px;
         left: 0;
-        height: 365px;
+        height: 335px;
         padding: 0px;
     }
     .recommendation .topics .topic .result.active {
@@ -719,6 +719,36 @@
     color: rgb(120, 120, 120);
 }
 
+@media(max-width: 450px) {    
+    .recommendation .topics .topic .result .window .book:hover {
+        box-shadow: 0 3px 6px rgba(0,0,0,.2);
+        transform: translateY(0);
+    }
+    .recommendation .topics .topic .result .window .book .title {
+        height: 45px;
+        padding: 10px;
+        padding-bottom: 5px;
+    }
+    .recommendation .topics .topic .result .window .book .title p {
+        line-height: 15px;
+        font-size: 16px;
+    }
+    .recommendation .topics .topic .result .window .book .donor {
+        height: 50px;
+        padding: 10px;
+        padding-top: 5px;
+    }
+    .recommendation .topics .topic .result .window .book .donor .profile .block {
+        height: 35px;
+        width: 35px;
+    }
+    .recommendation .topics .topic .result .window .book .donor .name p {
+        font-size: 12px;
+        line-height: 35px;
+        font-weight: 400;
+    }
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 
 
@@ -780,3 +810,27 @@
         left: 140%;
     }
 }
+
+@media(max-width: 450px) {
+    .recommendation .topics .topic .result .window .loader .title {
+        margin: 10px 0;
+        height: 35px;
+    }
+    
+    .recommendation .topics .topic .result .window .loader .donor {
+        height: 35px;
+        padding: 0px;
+    }
+    
+    .recommendation .topics .topic .result .window .loader .donor .profile .block {
+        background-color: rgb(245, 245, 245);
+    }
+    
+    .recommendation .topics .topic .result .window .loader .donor .name {
+        width: 70%;
+        background-color: rgb(245, 245, 245);
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
