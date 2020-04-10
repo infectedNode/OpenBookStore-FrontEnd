@@ -519,6 +519,7 @@
     text-align: center;
     transition: .2s;
     cursor: pointer;
+    display: none;
 }
 
 .recommendation .topics .topic .result .right {
@@ -535,6 +536,12 @@
     text-align: center;
     transition: .2s;
     cursor: pointer;
+    display: none;
+}
+
+.recommendation .topics .topic .result .left.show,
+.recommendation .topics .topic .result .right.show {
+    display: block;
 }
 
 .recommendation .topics .topic .result .left p,
