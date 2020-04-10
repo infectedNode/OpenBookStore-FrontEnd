@@ -563,6 +563,7 @@
     overflow: hidden;
     overflow-x: scroll;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
 }
 
 .recommendation .topics .topic .result .wrapper::-webkit-scrollbar {
